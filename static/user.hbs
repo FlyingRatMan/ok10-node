@@ -14,6 +14,10 @@
             <p>Age: {{this.age}}</p>
             <p>City: {{this.city}}</p>
             <p>Email: {{this.email}}</p>
+
+            <form action="/users/:id?method=delete" method="post">
+                <input type="submit" value="Delete">
+            </form>
         {{/with}}
     </div>
 </body>
